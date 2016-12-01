@@ -1,3 +1,5 @@
+  /*jshint esversion: 6 */
+
 (function(window) {
 
   /*
@@ -81,6 +83,7 @@ btn1.addEventListener('click', function(event){
   setMyLightGreen.apply(this);
   console.log(setMyLightGreen);
 });
+
   /*
    * Add a click event listener to btn2
    * the handler method will be a fat arrow function expression
@@ -90,6 +93,10 @@ btn1.addEventListener('click', function(event){
    * to set the context to the correct object
    */
 
+btn2.addEventListener('click', (event) => {
+  setMyLightGreen.apply(btn2);
+  console.log('wtf ', setMyLightGreen);
+});
 
   /*
    * Add a click event listener to btn3
