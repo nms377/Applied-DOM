@@ -81,7 +81,6 @@ const btn14 = document.getElementById('btn14');
 
 btn1.addEventListener('click', function(event){
   setMyLightGreen.apply(this);
-  console.log(setMyLightGreen);
 });
 
   /*
@@ -95,7 +94,6 @@ btn1.addEventListener('click', function(event){
 
 btn2.addEventListener('click', (event) => {
   setMyLightGreen.apply(btn2);
-  console.log('wtf ', setMyLightGreen);
 });
 
   /*
@@ -103,6 +101,9 @@ btn2.addEventListener('click', (event) => {
    * the handler method will be a reference to the setMyLightGreen function
    */
 
+btn3.addEventListener('click', function(event){
+  setMyLightGreen.apply(this);
+});
 
   /*
    * Add a click event listener to btn4
